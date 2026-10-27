@@ -1,0 +1,37 @@
+{
+    "cell_format": {
+        "border": 1
+    },
+    "columns": [
+        "Candidate Details",
+        "Qualification Status",
+        "Education (20%)",
+        "Experience (60%)",
+        "Interview (20%)",
+        "Aggregate Score",
+        "Architectural Feedback"
+    ],
+    "file_name": "Evaluation_Scorecard.xlsx",
+    "header_format": {
+        "align": "center",
+        "bg_color": "#1C6EB4",
+        "bold": true,
+        "border": 1,
+        "font_color": "#FFFFFF"
+    },
+    "report_type": "matrix",
+    "score_column": 5,
+    "score_highlight_format": {
+        "align": "center",
+        "bg_color": "#F2F2F2",
+        "bold": true,
+        "border": 1
+    },
+    "section_header_format": {
+        "bg_color": "#E6E6E6",
+        "bold": true,
+        "border": 1
+    },
+    "sheet_name": "Evaluation Scorecard",
+    "width_cap": 100
+}

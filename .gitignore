@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.streamlit/
+
+# Generated workbooks and private working files.
+# These are local working data by design: real candidate and proposal
+# data must never be committed. Keep it in local_configs/ and
+# local_data/ on your own machine; ship only fictional samples.
+outputs/
+local_configs/
+local_data/
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

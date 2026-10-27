@@ -1,0 +1,173 @@
+{
+    "column_formats": [
+        {
+            "align": "right",
+            "index": 0,
+            "name": "Target Position",
+            "suffix": ":   "
+        },
+        {
+            "bold": true,
+            "index": 1,
+            "name": "Candidate Name"
+        },
+        {
+            "align": "center",
+            "index": 2,
+            "italic": true,
+            "name": "Nationality"
+        },
+        {
+            "align": "center",
+            "index": [
+                3,
+                4,
+                5,
+                6
+            ],
+            "name": "Compliance Docs",
+            "validation": {
+                "source": [
+                    "Pending",
+                    "On File"
+                ],
+                "validate": "list"
+            }
+        },
+        {
+            "align": "center",
+            "index": 7,
+            "name": "Degree Scan"
+        },
+        {
+            "align": "center",
+            "index": 8,
+            "name": "Cert Scan"
+        },
+        {
+            "align": "center",
+            "bold": true,
+            "index": 9,
+            "name": "Remuneration"
+        },
+        {
+            "align": "center",
+            "index": 10,
+            "italic": true,
+            "name": "E-mail"
+        },
+        {
+            "align": "left",
+            "index": 11,
+            "name": "Notes"
+        }
+    ],
+    "columns": [
+        "Target Position",
+        "Candidate Name",
+        "Nationality",
+        "CV Signed? (TECH-6)",
+        "Exclusivity Signed?",
+        "Code of Conduct Signed? (TECH-7)",
+        "SEA/SH Signed? (TECH-8)",
+        "Degree Scan",
+        "Cert Scan (Critical)",
+        "Remuneration",
+        "E-mail",
+        "Status / Compliance Notes"
+    ],
+    "conditional_formats": [
+        {
+            "index": [
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "rules": [
+                {
+                    "criteria": "containing",
+                    "format": "green",
+                    "type": "text",
+                    "value": "On File"
+                },
+                {
+                    "criteria": "not containing",
+                    "format": "yellow",
+                    "type": "text",
+                    "value": "On File"
+                },
+                {
+                    "format": "yellow",
+                    "type": "blanks"
+                }
+            ]
+        },
+        {
+            "index": 8,
+            "rules": [
+                {
+                    "criteria": "containing",
+                    "format": "yellow",
+                    "type": "text",
+                    "value": "Pending"
+                },
+                {
+                    "format": "yellow",
+                    "type": "blanks"
+                },
+                {
+                    "criteria": "not containing",
+                    "format": "green",
+                    "type": "text",
+                    "value": "Pending"
+                }
+            ]
+        },
+        {
+            "index": 9,
+            "rules": [
+                {
+                    "criteria": "containing",
+                    "format": "yellow",
+                    "type": "text",
+                    "value": "TBD"
+                },
+                {
+                    "criteria": "containing",
+                    "format": "yellow",
+                    "type": "text",
+                    "value": "Pending"
+                },
+                {
+                    "format": "yellow",
+                    "type": "blanks"
+                },
+                {
+                    "criteria": "=AND(ISBLANK(J2)=FALSE, ISNUMBER(SEARCH(\"TBD\", J2))=FALSE, ISNUMBER(SEARCH(\"Pending\", J2))=FALSE)",
+                    "format": "green",
+                    "type": "formula"
+                }
+            ]
+        }
+    ],
+    "file_name": "Staff_Compliance_Checklist.xlsx",
+    "freeze_panes": [
+        1,
+        2
+    ],
+    "header_format": {
+        "align": "center",
+        "bg_color": "#2F5597",
+        "bold": true,
+        "border": 1,
+        "font_color": "#FFFFFF",
+        "font_size": 14,
+        "valign": "vcenter"
+    },
+    "header_row_height": 25,
+    "report_type": "checklist",
+    "sheet_name": "Admin & Compliance",
+    "table_style": "Table Style Light 9"
+}

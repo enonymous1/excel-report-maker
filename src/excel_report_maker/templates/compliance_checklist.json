@@ -1,0 +1,98 @@
+{
+    "column_formats": [
+        {
+            "align": "right",
+            "index": 0,
+            "suffix": ": "
+        },
+        {
+            "bold": true,
+            "index": 1
+        },
+        {
+            "align": "center",
+            "index": 2,
+            "italic": true
+        },
+        {
+            "align": "center",
+            "index": [
+                3,
+                4,
+                5,
+                6
+            ],
+            "validation": {
+                "source": [
+                    "Pending",
+                    "Complete"
+                ],
+                "validate": "list"
+            }
+        },
+        {
+            "align": "center",
+            "bold": true,
+            "index": 7
+        },
+        {
+            "align": "center",
+            "index": 8,
+            "italic": true
+        }
+    ],
+    "columns": [
+        "Position ID",
+        "Expert Name",
+        "Passport Country",
+        "Medical Clearance",
+        "Security Briefing",
+        "Contract Signed",
+        "Diploma Verified",
+        "Expected Rate",
+        "Contact Email",
+        "Compliance Remarks"
+    ],
+    "conditional_formats": [
+        {
+            "index": [
+                3,
+                4,
+                5,
+                6
+            ],
+            "rules": [
+                {
+                    "criteria": "containing",
+                    "format": "green",
+                    "type": "text",
+                    "value": "Complete"
+                },
+                {
+                    "criteria": "containing",
+                    "format": "yellow",
+                    "type": "text",
+                    "value": "Pending"
+                }
+            ]
+        }
+    ],
+    "file_name": "Compliance_Checklist.xlsx",
+    "freeze_panes": [
+        1,
+        2
+    ],
+    "header_format": {
+        "align": "center",
+        "bg_color": "#004B87",
+        "bold": true,
+        "border": 1,
+        "font_color": "#FFFFFF",
+        "font_size": 12,
+        "valign": "vcenter"
+    },
+    "header_row_height": 25,
+    "report_type": "checklist",
+    "sheet_name": "Compliance Checklist",
+    "table_style": "Table Style Light 9"
+}

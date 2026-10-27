@@ -1,0 +1,159 @@
+{
+    "column_formats": [
+        {
+            "_comment": "Primary IDs are bold and centered.",
+            "align": "center",
+            "bold": true,
+            "index": 0,
+            "width": 10
+        },
+        {
+            "_comment": "Demonstrates automatic suffixing for category labels.",
+            "index": 1,
+            "italic": true,
+            "suffix": ": ",
+            "width": 20
+        },
+        {
+            "_comment": "Native Excel dropdown list.",
+            "index": 4,
+            "validation": {
+                "input_message": "Select from the list",
+                "input_title": "Choose Status:",
+                "source": [
+                    "Passed",
+                    "Failed",
+                    "In Progress",
+                    "Not Started"
+                ],
+                "validate": "list"
+            },
+            "width": 25
+        }
+    ],
+    "columns": [
+        "Item ID",
+        "Category",
+        "Target Value",
+        "Current Status",
+        "Validation Test",
+        "Deadline"
+    ],
+    "conditional_formats": [
+        {
+            "index": 2,
+            "rules": [
+                {
+                    "_comment": "Predefined coloring for numeric thresholds.",
+                    "criteria": ">",
+                    "format": "green",
+                    "type": "cell",
+                    "value": 50
+                }
+            ]
+        },
+        {
+            "index": 3,
+            "rules": [
+                {
+                    "_comment": "Keyword matching to trigger styles.",
+                    "criteria": "containing",
+                    "format": "yellow",
+                    "type": "text",
+                    "value": "Alert"
+                }
+            ]
+        },
+        {
+            "index": 5,
+            "rules": [
+                {
+                    "_comment": "Dynamic formula-based rule for overdue items.",
+                    "criteria": "=AND(F2<>\"\", F2<TODAY())",
+                    "format": "alert_red",
+                    "type": "formula"
+                }
+            ]
+        }
+    ],
+    "data": [
+        [
+            "REF-001",
+            "Security",
+            75,
+            "Stable",
+            "Passed",
+            "2026-12-01"
+        ],
+        [
+            "REF-002",
+            "Privacy",
+            40,
+            "Alert - Check Logic",
+            "Failed",
+            "2025-01-01"
+        ],
+        [
+            "REF-003",
+            "Compliance",
+            90,
+            "Stable",
+            "In Progress",
+            "2026-06-15"
+        ]
+    ],
+    "description": "Reference schema demonstrating the engine's features: named styles, explicit column widths, page setup, validation, and conditional formatting. All sample values are fictional.",
+    "file_name": "Master_Sample_Report.xlsx",
+    "freeze_panes": [
+        1,
+        2
+    ],
+    "header_format": {
+        "align": "center",
+        "bg_color": "#2F5597",
+        "bold": true,
+        "border": 1,
+        "font_color": "#FFFFFF",
+        "valign": "vcenter"
+    },
+    "header_row_height": 25,
+    "page_setup": {
+        "_comment_paper": "9 is A4. Others: 1 (Letter), 5 (Legal)",
+        "margins": {
+            "bottom": 0.75,
+            "left": 0.7,
+            "right": 0.7,
+            "top": 0.75
+        },
+        "orientation": "landscape",
+        "paper_size": 9
+    },
+    "report_title": "Master Reference Specification",
+    "report_type": "checklist",
+    "sheet_name": "Feature Showcase",
+    "styles": {
+        "_comment": "Reusable style registry; conditional-format rules may name these.",
+        "alert_red": {
+            "bg_color": "#FFC7CE",
+            "font_color": "#9C0006"
+        },
+        "header_main": {
+            "align": "center",
+            "bg_color": "#2F5597",
+            "bold": true,
+            "border": 1,
+            "font_color": "#FFFFFF",
+            "valign": "vcenter"
+        },
+        "standard_text": {
+            "font_name": "Calibri",
+            "font_size": 11,
+            "valign": "vcenter"
+        },
+        "success_green": {
+            "bg_color": "#C6EFCE",
+            "font_color": "#006100"
+        }
+    },
+    "table_style": "Table Style Light 9"
+}

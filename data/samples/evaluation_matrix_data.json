@@ -1,0 +1,48 @@
+[
+    {
+        "header": "Component A: Digital Infrastructure Advisors",
+        "rows": [
+            [
+                "John Archer",
+                "Verified",
+                20,
+                58,
+                18,
+                96,
+                "Excellent technical background in fiber optics."
+            ],
+            [
+                "Maria Schmidt",
+                "Verified",
+                18,
+                60,
+                19,
+                97,
+                "Strong management experience in similar projects."
+            ]
+        ]
+    },
+    {
+        "header": "Component B: Legal and Regulatory Specialists",
+        "rows": [
+            [
+                "Samuel Oak",
+                "Conditional",
+                15,
+                45,
+                10,
+                70,
+                "Lacks specific experience in data privacy law."
+            ],
+            [
+                "Elena Rossi",
+                "Verified",
+                20,
+                55,
+                15,
+                90,
+                "Strong legal academic background."
+            ]
+        ]
+    }
+]

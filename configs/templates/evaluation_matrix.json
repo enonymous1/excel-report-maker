@@ -1,0 +1,36 @@
+{
+    "cell_format": {
+        "border": 1
+    },
+    "columns": [
+        "Applicant Name",
+        "Mandatory Checks",
+        "Gen. Quals (20%)",
+        "Adequacy (70%)",
+        "Regional (10%)",
+        "Total Score",
+        "Notes/Risk Analysis"
+    ],
+    "file_name": "Applicant_Evaluation_Matrix.xlsx",
+    "header_format": {
+        "align": "center",
+        "bg_color": "#2F5597",
+        "bold": true,
+        "border": 1,
+        "font_color": "#FFFFFF"
+    },
+    "report_type": "matrix",
+    "score_column": 5,
+    "score_highlight_format": {
+        "align": "center",
+        "bold": true,
+        "border": 1
+    },
+    "section_header_format": {
+        "bg_color": "#D3D3D3",
+        "bold": true,
+        "border": 1
+    },
+    "sheet_name": "Technical Scoring",
+    "width_cap": 100
+}
